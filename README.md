@@ -8,34 +8,34 @@ All code was created in either Julia version 1.4.2 or R version 3.6.2.
 The workflow is structured as follows:
 
 1. Download networks from www.web-of-life.es
-    - `download_network.R`
+    - `Setup/download_network.R`
 
 2. Generate model parameters
-    - `model_parameters_A.jl` - generates parameters for antagonistic networks
-    - `model_parameters_M.jl` - generates parameters for mutualistic networks
+    - `Setup/model_parameters_A.jl` - generates parameters for antagonistic networks
+    - `Setup/model_parameters_M.jl` - generates parameters for mutualistic networks
 
 3. Run simulations with spatially explicit coevolutionary metacommunity models
-    - `fragmentation_antagonistic_coevolution_v7_modular.jl` - antagonistic networks, random habitat destruction, 'coevolution'
-    - `fragmentation_antagonistic_coevolution_v7a_modular.jl` - antagonistic networks, random habitat destruction, 'evolution'
-    - `fragmentation_mutualistic_coevolution_v7_modular.jl` - mutualistic networks, random habitat destruction, 'coevolution'
-    - `fragmentation_mutualistic_coevolution_v7a_modular.jl` - mutualistic networks, random habitat destruction, 'evolution'
+    - `Simulations/fragmentation_antagonistic_coevolution_v7_modular.jl` - antagonistic networks, random habitat destruction, 'coevolution'
+    - `Simulations/fragmentation_antagonistic_coevolution_v7a_modular.jl` - antagonistic networks, random habitat destruction, 'evolution'
+    - `Simulations/fragmentation_mutualistic_coevolution_v7_modular.jl` - mutualistic networks, random habitat destruction, 'coevolution'
+    - `Simulations/fragmentation_mutualistic_coevolution_v7a_modular.jl` - mutualistic networks, random habitat destruction, 'evolution'
 
 4. Combine output files for all fractions of habitat loss
-    - `combine_results_replicas.jl` - for versions v7
-    - `combine_results_replicas_a.jl` - for versions v7a
+    - `Postprocessing/combine_results_replicas.jl` - for versions v7
+    - `Postprocessing/combine_results_replicas_a.jl` - for versions v7a
 
 5. Postprocess results
-    - `compute_trait_matching.jl` - computes trait matching within local networks
-    - `interaction_abundance_replicas.jl` - computes interaction abundances
-    - `patch_interactions_replicas.jl` - computes size, connectance and nestedness of local networks
-    - `patch_neighbours_replicas.jl` - determines the number of pristine neighbours of each patch
-    - `patch_dissimilarity.R` - computes beta-diversity between pairs of patches
-    - `patch_modularity_replicas.R` - computes modularity of local networks
-    - `remove_species_and_measure_structure.R` - removes species sequentially from networks and recalculates their nestedness and modularity
+    - `Postprocessing/compute_trait_matching.jl` - computes trait matching within local networks
+    - `Postprocessing/interaction_abundance_replicas.jl` - computes interaction abundances
+    - `Postprocessing/patch_interactions_replicas.jl` - computes size, connectance and nestedness of local networks
+    - `Postprocessing/patch_neighbours_replicas.jl` - determines the number of pristine neighbours of each patch
+    - `Postprocessing/patch_dissimilarity.R` - computes beta-diversity between pairs of patches
+    - `Postprocessing/patch_modularity_replicas.R` - computes modularity of local networks
+    - `Postprocessing/remove_species_and_measure_structure.R` - removes species sequentially from networks and recalculates their nestedness and modularity
 
 6. Combine results of all networks
-    - `combine_networks_v7.R`
-    - `combine_networks_v7a.R`
+    - `Postprocessing/combine_networks_v7.R`
+    - `Postprocessing/combine_networks_v7a.R`
 
 
 ## `Data`
