@@ -21,8 +21,8 @@ The workflow is structured as follows:
     - `Simulations/fragmentation_mutualistic_coevolution_v7a_modular.jl` - mutualistic networks, random habitat destruction, 'evolution'
 
 4. Combine output files for all fractions of habitat loss
-    - `Postprocessing/combine_results_replicas.jl` - for versions v7
-    - `Postprocessing/combine_results_replicas_a.jl` - for versions v7a
+    - `Postprocessing/combine_results_replicas.jl` - for version v7
+    - `Postprocessing/combine_results_replicas_a.jl` - for version v7a
 
 5. Postprocess results
     - `Postprocessing/compute_trait_matching.jl` - computes trait matching within local networks
