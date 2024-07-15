@@ -1,6 +1,6 @@
 # Effects of habitat destruction on coevolving metacommunities
 
-This repository contains the code used to perform simulations and postprocess the results for the manuscript "Effects of habitat destruction on coevolving metacommunities".
+This repository contains the code used to perform simulations and postprocess the results for the manuscript [Gawecka, Pedraza & Bascompte (2022) "Effects of habitat destruction on coevolving metacommunities"](https://doi.org/10.1111/ele.14118).
 
 ## `Code`
 All code was created in either Julia version 1.4.2 or R version 3.6.2.
